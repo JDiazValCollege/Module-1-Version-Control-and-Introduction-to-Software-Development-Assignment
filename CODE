@@ -1,0 +1,34 @@
+package testing;
+
+//Scanner to get users prompted variables
+import java.util.Scanner;
+public class calculatorOfThree {
+	public static void main(String[] args) {
+		
+		// Declaring variables, using doubles for possible use of decimal points
+		double numOne;
+		double numTwo;
+		double numThree;
+		double sum;
+		double average;
+
+		// Scanner object
+		Scanner scan = new Scanner(System.in);
+
+		// User prompt to input 3 numbers to be declared as variables for the program
+		System.out.println("Enter the first number: ");
+		numOne = scan.nextDouble();
+		System.out.println("Enter the second number: ");
+		numTwo = scan.nextDouble();
+		System.out.println("Enter the third number: ");
+		numThree = scan.nextDouble();
+
+		// Computing the sum of the three input values
+		sum = numOne + numTwo + numThree;
+
+		// Computing the average of the three values
+		average = (numOne + numTwo + numThree) / 3;
+
+		// Output to the user, computation results
+		System.out.println("The sum of the numbers is " + sum);
+		System.out.println("The average of the numbers is " + average);}}
